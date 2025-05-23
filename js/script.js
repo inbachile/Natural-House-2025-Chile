@@ -86,4 +86,15 @@ function guardarButacasVendidas() {
     localStorage.setItem("butacasVendidas", JSON.stringify(sinDuplicados));
     alert("✅ Butacas guardadas y bloqueadas localmente.");
     location.reload();
+    function desbloquearButacas() {
+    const clave = prompt("🔐 Ingrese la clave para desbloquear butacas:");
+    if (clave !== "cultur1sm0") {
+        alert("❌ Clave incorrecta. No se puede desbloquear.");
+        return;
+    }
+    localStorage.removeItem("butacasVendidas");
+    alert("✅ Todas las butacas han sido desbloqueadas.");
+    location.reload();
+}
+
 }
