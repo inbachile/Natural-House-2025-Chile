@@ -75,7 +75,7 @@ function enviarReserva() {
 
 function guardarButacasVendidas() {
     const clave = prompt("🔐 Ingrese la clave para bloquear butacas:");
-    if (clave !== "admin123") {
+    if (clave !== "cultur1sm0") {
         alert("❌ Clave incorrecta. No se puede guardar.");
         return;
     }
